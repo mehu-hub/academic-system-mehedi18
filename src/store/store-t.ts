@@ -2,8 +2,8 @@ import { INav } from "@/.next/dev/types/nav-t";
 
 
 export interface INotificationSlice {
-    message: string;
-    setMessage: (message: string) => void;
+    messages: string[]
+    setMessage: (message: string) => void
 }
 
 
