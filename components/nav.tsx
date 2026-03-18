@@ -1,5 +1,5 @@
 "use client"
-import { INav } from "@/.next/types/nav-t"
+import { INav } from "@/.next/dev/types/nav-t";
 import { AcademicCapIcon, Bars4Icon } from "@heroicons/react/24/outline"
 import Link from "next/link"
 import { useState } from "react"

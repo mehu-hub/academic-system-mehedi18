@@ -1,6 +1,6 @@
 import { AuthNav } from "@/components/auth-nav"
 import { Nav } from "@/components/nav"
-import { INav } from "@/.next/types/nav-t"
+import { INav } from "@/.next/dev/types/nav-t";
 
 const menu: INav[] = [
     { title: "Certificates", slug: "certificates" },
