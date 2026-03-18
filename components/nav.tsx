@@ -23,7 +23,8 @@ export function Nav(props: IProps) {
                 <button
                     onClick={() => setIsVisible(!isVisible)}
                     type="button"
-                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden
+                    hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                 >
                     <span className="sr-only">Open menu</span>
                     <Bars4Icon className="h-7 w-7 stroke-gray-800" />
@@ -31,12 +32,14 @@ export function Nav(props: IProps) {
                 <div
                     className={`w-full md:block md:w-auto${isVisible ? "" : " hidden"}`}
                 >
-                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 
+                    md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
                         {menu.map((item) => (
                             <li key={item.slug}>
                                 <Link
                                     href={item.slug}
-                                    className="block py-2 px-3 text-gray-800 hover:no-underline hover:text-gray-900 visited:text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0"
+                                    className="block py-2 px-3 text-gray-800 hover:no-underline hover:text-gray-900 visited:text-gray-800
+                                    rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0"
                                 >
                                     {item.title}
                                 </Link>
