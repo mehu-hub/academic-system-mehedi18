@@ -1,5 +1,4 @@
 export type IId = string | undefined
-
 export interface IFaculty {
     id: IId
     title: string
@@ -25,6 +24,11 @@ export interface IProgrammeSubject {
 }
 
 export interface IStudyForm {
+    id: IId
+    title: string
+}
+
+export interface IOption {
     id: IId
     title: string
 }
