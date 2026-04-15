@@ -1,17 +1,16 @@
 import { AuthNav } from "@/components/auth-nav"
 import { Nav } from "@/components/nav"
-import { INav } from "@/.next/dev/types/nav-t";
+import { INav } from "@/src/types/nav-t"
 
 const menu: INav[] = [
-    { title: "Certificates", slug: "certificates" },
-    { title: "Subjects", slug: "subjects" },
-    { title: "Students", slug: "students" }
+    { title: "Certificates", slug: "/certificates" },
+    { title: "Subjects", slug: "/subjects" },
+    { title: "Students", slug: "/students" }
 ]
 
-export async function Header() {
+export function Header() {
     return (
-        <header className="border-b border-gray-400 p-1 mb-5 grid 
-        grid-flow-col gap-x-4 justify-between items-center">
+        <header className="border-b border-gray-400 p-1 mb-5 grid grid-flow-col gap-x-4 justify-between items-center">
             <Nav menu={menu} />
             <AuthNav />
         </header>
